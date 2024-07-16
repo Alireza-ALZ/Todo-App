@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Todo App </title>
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+</head>
+<body>
+    <div id="input">
+        <header> Todo App </header>
+        <br><br><br>
+        <div id="inputs">
+            <input id="add" class="name" type="text" placeholder=" Add todo..."/>
+            <input id="add" class="date" type="date"/>
+            <button class="yellow-button add-todo"> Add </button>
+            <button class="yellow-button edit-todo"> Edit </button>
+        </div>    
+        <br><br><br>
+        <button id="all" class="yellow-button"> All </button>
+        <button id="pending" class="yellow-button"> Pending </button>
+        <button id="completed" class="yellow-button"> Completed </button>
+        <button id="delete-all" class="red-button"> Delete All </button>
+    </div>
+    <br><br>
+    <div id="alert"></div>
+    <table id="table"><!--We should use <thead> & <tbody> because of using dynamicly in JavaScript -->
+        <thead>
+            <tr id="first-row">
+            <th>Task</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>    
+    </table>
+    <script type="text/javascript" src="./JS/app.js"></script>
+</body>
+</html>

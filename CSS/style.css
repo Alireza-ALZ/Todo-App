@@ -1,0 +1,126 @@
+/* Variables for colors */
+:root {
+    --primary: #f9d72f;
+    --task: #f7f7f7;
+    --success: #36d39a;
+    --warning: #fbbe23;
+    --error: #f87171;
+}
+* { /* ==> to selct all of the items in the page */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+body {
+    margin: auto; /* ==> put items in the middle of the page */
+    max-width: 1500px;
+}
+#input {
+    width: 1400px;
+    height: 270px;
+    box-shadow: 0 0 30px 5px gray;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+header {
+    font-size: xx-large;
+    text-align: center;
+}
+#add {
+    width: 650px;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid var(--primary);
+    margin-left: 15px;
+}
+#add:focus {
+    outline: none; /* Disable focus mode on inputs */
+    border-width: 2px;
+}
+.yellow-button {
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    border: 4px solid var(--primary);
+    margin-left: 15px;
+    cursor: pointer;
+}
+.yellow-button:hover {
+    opacity: 0.9;
+}
+.red-button {
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(230, 3, 3);
+    border: 4px solid rgb(230, 3, 3);
+    margin-left: 1100px;
+    cursor: pointer;
+}
+.red-button:hover {
+    opacity: 0.9;
+}
+#alert {
+    width: 93%;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+}
+#table {
+    width: 93%;
+    margin-top: 20px;
+}
+th {
+    border: 2px solid #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+tbody td {
+    border: 2px solid #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 25%;
+}
+#first-row {
+    background-color: #bbbbbb;
+}
+#first-row :first-child {
+    border-top-left-radius: 10px;
+}
+#first-row :last-child {
+    border-top-right-radius: 10px;
+}
+tr {
+    background-color: #ebebeb
+}
+.edit {
+    width: 50px;
+    height: 25px;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    background-color: var(--primary);
+    cursor: pointer;
+    margin: 0 5px 0;
+}
+.do {
+    width: 40px;
+    height: 25px;
+    border: 1px solid var(--success);
+    border-radius: 5px;
+    background-color: var(--success);
+    cursor: pointer;
+    margin: 0 5px 0;
+}
+.delete {
+    width: 60px;
+    height: 25px;
+    border: 1px solid var(--error);
+    border-radius: 5px;
+    background-color: var(--error);
+    cursor: pointer;
+    margin: 0 5px 0;
+}
+.edit-todo {
+    display: none;
+}
